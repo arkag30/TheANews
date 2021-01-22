@@ -2,7 +2,7 @@ window.addEventListener("load",init);
 
 function init(){
 
-    ajaxnews('https://newsapi.org/v2/top-headlines?country=in&apiKey=a1af60f84c7d4b3eb142e47bf65dd34d');
+    ajaxnews('https://gnews.io/api/v4/top-headlines?lang=en&country=in&token=c08022f8c6bebd711e02502326662b2a');
 
    
     document.querySelector(".slider").addEventListener("click",openslidemenu);
@@ -24,7 +24,7 @@ function init(){
 
 function loadhome(){
     document.querySelector(".news").innerHTML="";
-    ajaxnews('https://newsapi.org/v2/top-headlines?country=in&apiKey=a1af60f84c7d4b3eb142e47bf65dd34d');
+    ajaxnews('https://gnews.io/api/v4/top-headlines?lang=en&country=in&token=c08022f8c6bebd711e02502326662b2a');
 
 }
 
@@ -56,7 +56,7 @@ function getData(event){
 var a=event.target.innerHTML;
     document.querySelector(".news").innerHTML="";
 
-    ajaxnews('https://newsapi.org/v2/top-headlines?country=in&category='+a+'&apiKey=a1af60f84c7d4b3eb142e47bf65dd34d');
+    ajaxnews('https://gnews.io/api/v4/top-headlines?lang=en&country=in&category='+a+'&token=c08022f8c6bebd711e02502326662b2a');
 
 }
 
