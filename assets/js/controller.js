@@ -93,7 +93,7 @@ function addItem(a){
 
     //  console.log(a);
    
-     document.querySelector(".news").innerHTML=document.querySelector(".news").innerHTML+` <section class="info"><img src="${a.urlToImage}" alt="news"> <div><h2>${a.title}</h2>  <p>${a.description}</p> <a href="${a.url}" >Read More</a> </div> </section>`;
+     document.querySelector(".news").innerHTML=document.querySelector(".news").innerHTML+` <section class="info"> <div><h2>${a.title}</h2>  <p>${a.description}</p> <a href="${a.url}" >Read More</a> </div> </section>`;
     
          }
 
